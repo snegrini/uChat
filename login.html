@@ -2,16 +2,36 @@
 <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 
-<input id="nome"></input>
-<button id="bottone" onClick="insNome()">VAI!</button>
+
+
+<table>
+	<tr>
+		<td width="65%">
+		</td>
+		<td>
+			<img src="js/logo.jpg" style="width:304px;height:228px">
+		</td>
+	</tr>
+	<tr>
+		<td width="60%">
+		</td>
+		<td>
+			
+			<input id="nome"></input>
+			<button id="bottone" onClick="insNome()">VAI!</button>
+		</td>
+	</tr>
+</table>
+
+
 <script>
 	var socket=io();
 	
-		
-		function insNome(){	//invio nome
+		function insNome(){
+					//invio nome
 			var n;
 			n = document.getElementById("nome").value;
-			//controllo nome
+			
 			if(n!="")
 			{
 				socket.emit('nome',n);
