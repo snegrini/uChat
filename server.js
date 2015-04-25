@@ -6,7 +6,8 @@ var io = require('socket.io')(http);
 var Utenti = new Array();
 var nUtenti=0;
 
-app.use('/js', express.static('js'));
+app.use('/js', express.static('js')); // load js folder
+app.use('/js', express.static('js')); // load img folder
 
 app.get('/chat', function(req, res){
 	res.sendFile(__dirname + '/chat.html');
