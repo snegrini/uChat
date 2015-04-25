@@ -7,13 +7,20 @@
 <script>
 	var socket=io();
 	
-		function insNome(){
-					//invio nome
+		
+		function insNome(){	//invio nome
 			var n;
 			n = document.getElementById("nome").value;
-			
-			socket.emit('nome',n);
-			window.location.assign("/chat");
+			//controllo nome
+			if(n!="")
+			{
+				socket.emit('nome',n);
+				window.location.assign("/chat");
+			}
+			else
+			{
+				alert("inserire un nome!");
+			}
 		}
 	
 </script>
