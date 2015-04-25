@@ -3,7 +3,7 @@
 	<title>uChat</title>
 	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-	<script type="text/javascript" src="js/chat.js"></script>	
+	<script type="text/javascript" src="js/chat.js"></script>
 </head>
 
 <body onkeydown="inviaMSG(event.keyCode)" background="img/Background.png">
@@ -15,10 +15,11 @@
 					PADDING-TOP: 3px; BORDER-BOTTOM: #c0c0c0 1px solid; font-family: comic sans ms; font-size: 10pt"> 
 				</div>
 			</td>
-			<td><textarea id="boxUtenti" cols="20" rows="27" style="resize:none" readonly></textarea></td>
+			<td><textarea id="boxUtenti" cols="20" rows="27" style="resize: none;" readonly></textarea></td>
 		</tr>
-		<tr><textarea id="testo" cols="69" rows="2" style="resize:none"></textarea></tr>
-		
+		<tr>	
+			<td><textarea id="testo" cols="60" rows="2" style="resize: none;"></textarea></td>	
+		</tr>
 	</table>
 </body>
 </html>
