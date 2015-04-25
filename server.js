@@ -7,6 +7,7 @@ var Utenti = new Array();
 var nUtenti=0;
 
 app.use('/js', express.static('js')); // load js folder
+app.use('/css', express.static('css')); // load css folder
 app.use('/img', express.static('img')); // load img folder
 
 app.get('/chat', function(req, res){

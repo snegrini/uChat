@@ -1,43 +1,39 @@
 <html>
-<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-<body background="img/Background.png">
+<head>
+	<title>uChat - Login</title>
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 
-<center>
-	<table>
-		<tr>
-			<td><img src="img/logo.jpg" style="width:304px;height:228px"></td>
-		</tr>
-		<tr>
-			<td>
-				<input id="nome"></input>
-				<button id="bottone" onClick="insNome()">VAI!</button>
-			</td>
-		</tr>
-	</table>
-</center>
-
-<script>
-	var socket=io();
-	
-		function insNome(){
-					//invio nome
+	<script type="text/javascript">
+		var socket=io();
+		//invio nome
+		function insNome() {
 			var n;
 			n = document.getElementById("nome").value;
 			
-			if(n!="")
-			{
+			if(n != "") {
 				socket.emit('nome',n);
 				window.location.assign("/chat");
 			}
-			else
-			{
-				alert("inserire un nome!");
+			else {
+				alert("Inserire un nome!");
 			}
 		}
-	
-</script>
-
-
-
+	</script>
+</head>
+<body>
+	<center>
+		<table>
+			<tr>
+				<td><img src="img/logo.jpg" style="width:304px;height:228px"></td>
+			</tr>
+			<tr>
+				<td>
+					<input id="nome"></input>
+					<button id="bottone" onClick="insNome()">VAI!</button>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
 </html>
