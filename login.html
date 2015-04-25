@@ -1,0 +1,24 @@
+<html>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+<input id="nome"></input>
+<button id="bottone" onClick="insNome()">VAI!</button>
+
+<script>
+	var socket=io();
+	
+		function insNome(){
+					//invio nome
+			var n;
+			n = document.getElementById("nome").value;
+			
+			socket.emit('nome',n);
+			window.location.assign("/chat");
+		}
+	
+</script>
+
+
+
+</html>

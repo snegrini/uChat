@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>uChat</title>
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/chat.js"></script>	
+</head>
+
+<body onkeydown="inviaMSG(event.keyCode)">
+	<table>
+		<tr>		
+			<td>
+				<div id="chatBox" style="width: 500px; height: 420px; overflow-y: scroll; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-RIGHT: 3px; 
+					BORDER-TOP: #c0c0c0 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: #c0c0c0 1px solid; 
+					PADDING-TOP: 3px; BORDER-BOTTOM: #c0c0c0 1px solid; font-family: comic sans ms; font-size: 10pt"> 
+				</div>
+			</td>
+			<td><textarea id="boxUtenti" cols="20" rows="27" readonly style="resize:none"></textarea></td>
+		</tr>
+		<tr><textarea id="testo" cols="69" rows="2"style="resize:none"></textarea></tr>
+	</table>
+</body>
+</html>
