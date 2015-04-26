@@ -19,7 +19,23 @@ body {
 	padding-bottom: 3px;
 	padding-right: 3px; 
 	padding-left: 3px; 
-	font-family: comic sans ms;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+
+#boxUtenti {
+	width: 150px;
+	height: 430px;
+	resize: none;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+
+#testo {
+	width: 508px;
+	height: 60px;
+	resize: none;
+	font-family: Verdana;
 	font-size: 10pt;
 }
 
