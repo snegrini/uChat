@@ -65,7 +65,7 @@ io.on('connection', function(socket){
 					nUtenti=nUtenti-1;
 				}
 			}
-			inviaUtenti()
+			inviaUtenti();
 	  });
 });
 
