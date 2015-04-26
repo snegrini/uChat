@@ -44,6 +44,12 @@ function inviaMSG(t) {
 	}
 }
 
+//funzione cancella testo
+function cancella()
+{
+	document.getElementById("chatBox").innerHTML = "";
+}
+
 function checkRefresh()
 {
 	if( document.refreshForm.visited.value == "" )
