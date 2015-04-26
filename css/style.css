@@ -23,12 +23,31 @@ body {
 	font-size: 10pt;
 }
 
+.logo {
+	position: relative;
+	top: 70px;
+}
+
+.logo2 {
+	position: relative;
+	top: 30px;
+}
+
+.content {
+	position: relative;
+	top: 40px;
+}
+
+.text {
+	font-family: Verdana; 
+}
+
 .powered {
 	position: relative;
     top: 30px;
 	font-family: Arial;
 	color: red;
-	font-size: 10px;
+	font-size: 11px;
 	line-height: 14px;	
 }
 
@@ -38,7 +57,7 @@ body {
 	font-family: Arial;
 	line-height: 14px;
 	color: black;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight:bold;
 }
 
