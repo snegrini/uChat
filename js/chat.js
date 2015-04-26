@@ -49,3 +49,7 @@ function cancella()
 {
 	document.getElementById("chatBox").innerHTML = "";
 }
+
+$(window).on('unload', function(){
+	window.location.assign("/login");
+}); 
